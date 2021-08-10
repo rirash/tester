@@ -2,8 +2,11 @@
 {
     public abstract class Test
     {
-        private string testType { get; set; }               //Тип теста. Еще в разработке))
-        private bool availabilityOfImages { get; set; }     //Если картинки в тесте?
+        private string testType;              //Тип теста. Еще в разработке))
+        private bool availabilityOfImages;    //Если картинки в тесте?
+
+        public string TestType => testType;
+        public bool AvailabilityOfImages => availabilityOfImages;
 
         public Test(string _testType, bool _availabilityOfImages)
         {
