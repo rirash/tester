@@ -2,11 +2,19 @@
 {
     public abstract class Test
     {
+<<<<<<< HEAD
         private double[] resultsOfTest;                 //Результаты теста
         private string nameOfTest;                      //Путь к файлу с вопросами
         private string instruction;                     //Инструкция к тесту
         private string[] themes;                        //Полные названия тем тестирования
         private string[] tegs;                          //Теги по темам для тестирования                        
+=======
+        private string testType;              //Тип теста. Еще в разработке))
+        private bool availabilityOfImages;    //Если картинки в тесте?
+
+        public string TestType => testType;
+        public bool AvailabilityOfImages => availabilityOfImages;
+>>>>>>> 5ae308eeeb6238ab22a4af3c4d56ba562b0c7082
 
 
         public double[] ResultsOfTest
